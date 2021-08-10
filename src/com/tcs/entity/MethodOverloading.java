@@ -26,3 +26,15 @@ class User1{
 		System.out.println("user is working for "+duration+" hours");
 	}
 }
+
+class Employee1 extends User1{
+	public void work() {
+		super.work();
+		System.out.println("Employee is working");
+	}
+	
+	public void work(boolean duration ){
+		super.work();
+		System.out.println("user is working for "+duration+" hours");
+	}
+}
