@@ -3,13 +3,19 @@ package com.tcs.entity;
 public class User {
 	private String name;
 	private Long mobileNumber;
+	Role role;
 	private byte age;
 	
 	public User(String name, Long mobileNumber, byte age) {
+//		super();
+		this(name, mobileNumber);
+		this.age = age;
+	}
+	
+	public User(String name, Long mobileNumber) {
 		super();
 		this.name = name;
 		this.mobileNumber = mobileNumber;
-		this.age = age;
 	}
 
 	public void workout() {
