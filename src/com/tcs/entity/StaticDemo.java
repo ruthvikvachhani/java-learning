@@ -13,20 +13,24 @@ public class StaticDemo {
 	}
 }
 
-class Bank{
+class Bank {
 	static int counter; // static variable same for all object
 	int instanceVariable = 10; // instance variable different for individual object
-	
-	public static int createNewAccountNumber()
-	{
+
+	public static int createNewAccountNumber() {
 		return ++counter;
 	}
 }
 
 class JMM107 {
-	  public static void main(String[] args) {
-	    boolean b = true;
-	    if (b = false) {System.out.print("A");
-	    } else if (b) {System.out.print("B");
-	    } else {System.out.print("C");}
-	}}
+	public static void main(String[] args) {
+		boolean b = true;
+		if (b = false) {
+			System.out.print("A");
+		} else if (b) {
+			System.out.print("B");
+		} else {
+			System.out.print("C");
+		}
+	}
+}
