@@ -2,11 +2,22 @@ package com.tcs.exceptionhandling;
 
 public class ExceptionsDemo {
 	public static void main(String[] args) throws MyCheckedException {
-		demo2();
+		try {
+			demo2();
+		} catch (InavlidInputException e) {
+			// TODO Auto-generated catch block
+//			e.printStackTrace();
+		}
+		catch (MyCheckedException e) {
+			e.printStackTrace();
+		}
+		finally {
+			System.out.println("always called");
+		}
 //		demo1();
 	}
 	
-	private static void demo2() throws MyCheckedException{
+	private static void demo2() throws MyCheckedException,InavlidInputException{
 		throw new MyCheckedException();
 	}
 	private static void demo1() {
