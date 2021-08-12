@@ -2,11 +2,21 @@ package com.tcs.map.demo;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class HashMapDemo {
 	public static void main(String[] args) {
-		createHashMap();
+//		createHashMap();
+		treeMap();
 	}
+
+//	private static void treeMap() {
+//		Map<Integer, Float> mathscores = new TreeMap<Integer, Float>();
+//		for (int i = 0; i < 20; i++) {
+//			mathScore.put("student"+i,100*math.random());
+//		}
+//		
+//	}
 
 	private static void createHashMap() {
 		Map<String, Marks> mathScore = new HashMap<String, Marks>();
