@@ -9,13 +9,13 @@ public class HashMapDemo {
 	}
 
 	private static void createHashMap() {
-		Map<String, Float> mathScore = new HashMap<String, Float>();
+		Map<String, Marks> mathScore = new HashMap<String, Marks>();
 		for (int i = 0; i < 20; i++) {
-//			Marks marks = new Marks();
-//			marks.getMaths(i+10);
-//			marks.getBiology(i+20)
-//			marks.getPhysics(i+10);
-			mathScore.put("student"+i,(float) (100 * Math.random()) );
+			Marks marks = new Marks();
+			marks.setMaths((float) ( 100*Math.random()));
+			marks.setBiology((float) (100*Math.random()));
+			marks.setPhysics((float) (100*Math.random()));
+			mathScore.put("student"+i, marks);
 		}
 		System.out.println(mathScore);
 	}
