@@ -17,6 +17,10 @@ public class HashMapDemo {
 			marks.setPhysics((float) (100*Math.random()));
 			mathScore.put("student"+i, marks);
 		}
-		System.out.println(mathScore);
+		boolean exists = mathScore.containsKey("student1");
+		System.out.println(exists);
+//		System.out.println(mathScore);
+//		mathScore.put("student1", mathScore.get("student1").setBiology(12f));
+		mathScore.remove("student1");
 	}
 }
