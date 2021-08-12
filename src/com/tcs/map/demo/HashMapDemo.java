@@ -10,13 +10,13 @@ public class HashMapDemo {
 		treeMap();
 	}
 
-//	private static void treeMap() {
-//		Map<Integer, Float> mathscores = new TreeMap<Integer, Float>();
-//		for (int i = 0; i < 20; i++) {
-//			mathScore.put("student"+i,100*math.random());
-//		}
-//		
-//	}
+	private static void treeMap() {
+		Map<Integer, Float> mathscores = new TreeMap<Integer, Float>();
+		for (int i = 0; i < 20; i++) {
+			mathscores.put(i,(float) (100*Math.random()));
+		}
+		System.out.println(mathscores);
+	}
 
 	private static void createHashMap() {
 		Map<String, Marks> mathScore = new HashMap<String, Marks>();
