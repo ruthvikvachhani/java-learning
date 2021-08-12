@@ -3,6 +3,7 @@ package com.tcs.listdemo;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
@@ -10,7 +11,26 @@ public class ArrayListDemo {
 	public static void main(String[] args) {
 		List<Integer> numbers = createList();
 //		sortList(numbers);
-		filterList(numbers);
+//		filterList(numbers);
+//		add(numbers);
+		otherOps(numbers);
+	}
+
+	private static void otherOps(List<Integer> numbers) {
+		System.out.println(numbers);
+//		numbers.remove(0);
+		numbers.add(1,50);
+		System.out.println(numbers);
+		
+	}
+
+	private static void add(List<Integer> numbers) {
+		Optional<Integer> sum1 = numbers.stream().reduce(
+				(Integer sum,Integer number) -> {
+					System.out.println(sum+", "+number);
+					return sum + number;
+					});
+		System.out.println(sum1.get());
 	}
 
 	/**
