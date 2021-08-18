@@ -1,0 +1,21 @@
+#command for create index
+ db.orders.createIndex(
+	{
+		"age":22
+	},
+	{
+		unique: true, 
+		sparse: true, 
+		expireAfterSeconds: 3600
+	})
+
+# command for sorting
+db.orders.aggregate(
+	[
+		{
+			$sort : 
+				{
+				name:1
+				}
+		}
+	]) 

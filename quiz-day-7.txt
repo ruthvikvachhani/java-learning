@@ -1,0 +1,40 @@
+#kaywords
+1. l
+2. b,c,d,g,h
+3. a,b,e,g,k
+4. e,f,g,i,k
+5. b,d,h,i,j
+6. a,b,c,d,g,i,j,k,n
+7. j
+8. e
+9. g
+10. d
+11. f
+
+#interface
+1. c
+2. d
+3. a,e
+4. a,f
+5. a,d,e
+6. a
+7. a,c,e
+8. a,b
+9. c,f
+10. a
+11. a,d,e,f
+12. e
+13. e
+14. a,e,c
+15. a
+16. c,d,e
+17. c
+18. a,b,c
+19. d
+20. b,c,d
+21. b
+22. b
+23. b
+24. e
+25. h
+26. j
